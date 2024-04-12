@@ -1,0 +1,242 @@
+.logoImage {
+    height: 90px;
+    width: 90px;
+}
+
+.navbarText ul li a {
+    font-size: 21px;
+    font-family: Verdana;
+    letter-spacing: 0.5px;
+    color: black;
+}
+
+.navbarText ul li a:hover {
+    color: rgb(101, 101, 101);
+}
+
+.main-top {
+    padding-bottom: 40px;
+}
+
+.main-top-1 {
+    font-weight: 200;
+    font-size: 70px;
+    /* font-family: ; */
+    color: rgb(135, 196, 67);
+}
+
+.main-top-2 {
+    font-weight: 400;
+    font-size: 30px;
+    /* font-family: ; */
+    color: rgb(102, 147, 51);
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-left {
+    padding-top: 100px;
+}
+
+.btnMain {
+    height: 50px;
+    width: 80%;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #111;
+    border-radius: 8px;
+    color: #6a9937;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 23px;
+    font-weight: 600;
+    height: 55px;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+}
+
+.btnMain:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 55px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.btnMain:hover:after {
+    transform: translate(0, 0);
+
+}
+
+.btnMain:active {
+    background-color: white;
+    outline: 0;
+}
+
+.btnMain:hover {
+    color: rgb(55, 80, 39);
+    outline: 0;
+}
+
+.main-right {
+    padding-top: 1px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: static;
+    max-width: 100%;
+    height: 500px;
+    background-image: url(./Images/plate.jpg);
+
+}
+
+.main-right-1 {
+    height: 340px;
+    width: 438px;
+    text-align: left;
+    background-color: white;
+    border: 0px solid black;
+    border-radius: 5px;
+    position: relative;
+    left: 100px;
+    top: 90px;
+    opacity: 0.8;
+
+}
+
+.main-right-text {
+    padding-top: 40px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+.mr-p-1 {
+    margin-bottom: 0px;
+    font-size: 38px;
+    font-weight: 700;
+    color: #2f9111;
+    opacity: 1;
+    padding-top: 25px;
+}
+
+.mr-p-2 {
+    margin-top: 0px;
+    font-size: 38px;
+    font-weight: 700;
+    color: #2f9111;
+    opacity: 1;
+    padding-top: 10px;
+}
+
+
+.mr-p-3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #2f9111;
+}
+.footer{
+    background-color: white;
+
+}
+.icon{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    color: #2f9111;
+}
+
+.btnModal{
+    background-color:#3db817;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+@media (max-width: 480px) {
+    .logoImage {
+        height: 50px;
+        width: 50px;
+    }
+
+    .main-top {
+        padding-bottom: 0px;
+    }
+
+    .main-left {
+        padding-top: 20px;
+    }
+
+    .btnMain {
+        width: 100%;
+        padding: 0 40px;
+        font-size: 20px;
+    }
+
+    .main-right {
+        margin-top: 40px;
+        padding-top: 0px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: static;
+        max-width: 100%;
+        height: 424px;
+        background-image: url(./Images/plate.jpg);
+    }
+
+    .main-right-1 {
+        height: 240px;
+        width: 260px;
+        text-align: left;
+        background-color: white;
+        border: 0px solid black;
+        border-radius: 5px;
+        position: relative;
+        left: 50px;
+        top: 96px;
+        opacity: 0.8;
+    }
+
+    .main-right-text {
+        padding-top: 7px;
+        margin-left: 30px;
+
+    }
+
+
+    .mr-p-1 {
+        font-size: 29px;
+        font-weight: 700;
+        color: #2f9111;
+        opacity: 1;
+    }
+
+    .mr-p-2 {
+        font-size: 29px;
+        font-weight: 700;
+        color: #2f9111;
+        opacity: 1;
+    }
+
+
+    .mr-p-3 {
+        font-size: 13px;
+        font-weight: 500;
+        color: #2f9111;
+    }
+
+}
