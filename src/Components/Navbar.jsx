@@ -15,8 +15,7 @@ function Navbar() {
                     </div>
                     <div className=" sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div className="offcanvas-header text-dark border-bottom">
-                        <img src={brandName} alt="" className="offcanvas-title text-dark px-3" id="offcanvasNavbarLabel" height="50px" width="150px"/>
-                           
+                            <img src={brandName} alt="" className="offcanvas-title text-dark px-3" id="offcanvasNavbarLabel" height="50px" width="150px" />
                             <button type="button" class="btn-close btn-close-dark shadow" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div className="offcanvas-body navbarText">

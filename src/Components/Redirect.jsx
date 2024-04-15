@@ -1,4 +1,7 @@
 import React from 'react';
+import card1 from "../Images/plate.jpg"
+import card2 from "../Images/plateImg.png"
+
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
@@ -10,8 +13,7 @@ import CardMedia from '@mui/material/CardMedia';
 import CardActionArea from '@mui/material/CardActionArea';
 import { CardActions } from '@mui/material';
 
-import card1 from "../Images/plate.jpg"
-import card2 from "../Images/plateImg.png"
+
 
 function Redirect({ handleFormSend, handleRedirectClose }) {
 
@@ -90,11 +92,6 @@ function Redirect({ handleFormSend, handleRedirectClose }) {
                 </DialogContent>
                 <DialogActions>
                     <button className='btnModal' onClick={handleRedirectClose}>CANCEL</button>
-                    <a href="/" target='blank'>
-                        <button className='btnModal' autoFocus>
-                            FREE EBOOK
-                        </button>
-                    </a>
                 </DialogActions>
             </Dialog>
         </div>

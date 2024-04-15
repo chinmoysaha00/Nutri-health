@@ -26,32 +26,32 @@ function Form({ handleClickOpen, handleClose }) {
   };
 
   const handleFormSend = () => {
-    // if (!name || !contact || !email || !validateEmail(email)) {
-    //   setFormErrors({
-    //     name: !name,
-    //     contact: !contact,
-    //     email: !email || !validateEmail(email),
-    //   });
-    //   return;
-    // }
+    if (!name || !contact || !email || !validateEmail(email)) {
+      setFormErrors({
+        name: !name,
+        contact: !contact,
+        email: !email || !validateEmail(email),
+      });
+      return;
+    }
 
-    // axios.post(`https://sheet.best/api/sheets/8a744bb5-e430-4e70-b1c2-b7290214cad4`, {
-    //   name, contact, email
-    // })
+    axios.post(`https://sheet.best/api/sheets/8a744bb5-e430-4e70-b1c2-b7290214cad4`, {
+      name, contact, email
+    })
 
-    // // setInterval(() => {
-    // //   handle;
-    // // }, 2000);
+    // setInterval(() => {
+    //   handle;
+    // }, 2000);
 
-    //   .then(response => {
-    //     console.log('Form data sent successfully:', response.data);
-    //     // handleClose();
-    //   })
+      .then(response => {
+        console.log('Form data sent successfully:', response.data);
+        // handleClose();
+      })
 
-    //   .catch(error => {
-    //     console.error('Error sending form data:', error);
-    //   });
-    // alert("Submitted!");
+      .catch(error => {
+        console.error('Error sending form data:', error);
+      });
+    alert("Submitted!");
 
     setRedirect(true);
   };
