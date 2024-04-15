@@ -18,8 +18,8 @@ function Main() {
 
     return (
         <div className='main'>
-            <div className='text-center py-4'>
-                <img src={brandName} alt="" height="80px" width="200vw" />
+            <div className='main-top text-center'>
+                <img src={brandName} alt="/" className='main-top-img' />
                 {/* <h1 className='text-center pt-4 pb-0 main-top-1'>Start Living Healthy</h1>
                 <h3 className='text-center main-top-2'>with NUTRIHEALTH</h3> */}
             </div>
