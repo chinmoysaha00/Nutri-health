@@ -4,7 +4,7 @@ import { faInstagram, faFacebookF, faTwitter, faLinkedin, faYoutube } from '@for
 
 function Footer() {
     return (
-        <div className='footer mt-1 shadow-lg py-2 d-flex justify-content-center align-items-center'>
+        <div className='footer pt-4 shadow-lg py-2 d-flex justify-content-center align-items-center'>
             <div className='text-center '>
                 <a href="/" target='blank' className='icon mx-3 awesomeIcon'><FontAwesomeIcon icon={faFacebookF} /></a>
                 <a href="/" target='blank' className='icon mx-3 awesomeIcon'><FontAwesomeIcon icon={faTwitter} /></a>

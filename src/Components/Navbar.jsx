@@ -6,7 +6,7 @@ import brandName from "../Images/Brandname.png"
 function Navbar() {
     return (
         <div className='sticky-top m-0 p-0'>
-            <nav className="py-1 pt-2 navbar navbar-expand-md shadow-lg" style={{ backgroundColor: 'white' }}>
+            <nav className="py-1 pt-1 navbar navbar-expand-md shadow-lg" style={{ backgroundColor: 'white' }}>
                 <div className="container">
                     <div className='text-center'>
                         <a className="navbar-brand" href="/">
