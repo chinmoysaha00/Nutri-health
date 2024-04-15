@@ -14,15 +14,16 @@
     color: rgb(101, 101, 101);
 }
 
-.main-top-img {
-    height: 80px;
-    width: 200vw;
-}
-
 .main-top {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+
+.main-top-img {
+    height: 80px;
+    width: 276px;
+}
+
 
 .main-left {
     padding-top: 100px;

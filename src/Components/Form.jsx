@@ -35,17 +35,12 @@ function Form({ handleClickOpen, handleClose }) {
       return;
     }
 
-    axios.post(`https://sheet.best/api/sheets/b72cdff4-7c1d-4f5e-b0c2-86bde7160c2c`, {
+    axios.post(`https://sheet.best/api/sheets/8a744bb5-e430-4e70-b1c2-b7290214cad4`, {
       name, contact, email
     })
 
-    // setInterval(() => {
-    //   handle;
-    // }, 2000);
-
       .then(response => {
         console.log('Form data sent successfully:', response.data);
-        // handleClose();
       })
 
       .catch(error => {
@@ -56,9 +51,9 @@ function Form({ handleClickOpen, handleClose }) {
     setRedirect(true);
   };
 
-const handleRedirectClose = () => {
+  const handleRedirectClose = () => {
     setRedirect(false);
-};
+  };
 
   return (
     <div>

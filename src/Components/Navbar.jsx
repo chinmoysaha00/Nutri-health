@@ -27,7 +27,7 @@ function Navbar() {
                                     <a className="nav-link " href="/" target='blank'>CONTACT US</a>
                                 </li>
                                 <li className="nav-item mx-3">
-                                    <a className="nav-link " href="/" target='blank'>FREE E-BOOK </a>
+                                    <a className="nav-link " href="/" target='blank'>PRODUCTS </a>
                                 </li>
 
                             </ul>
