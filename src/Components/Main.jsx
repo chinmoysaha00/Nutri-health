@@ -1,20 +1,29 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "../style.css"
-import Form from './Form'
+// import Form from './Form'
 import brandName from '../Images/Brandname.png'
 
-function Main() {
-    const [popup, setPopup] = useState(false)
+function Main(props) {
+    // const [popup, setPopup] = useState(false)
 
-    const handleClickOpen = () => {
-        setPopup(true);
+    // const handleClickOpen = () => {
+    //     setPopup(true);
+    // };
+
+    // const handleClose = () => {
+    //     setPopup(false);
+    // };
+
+    const handleEbookClick = () => {
+        props.showAlert("EBook coming soon!");
     };
 
-    const handleClose = () => {
-        setPopup(false);
+    const handleHealthyProductsClick = () => {
+        props.showAlert("Healthy products coming soon!");
     };
-
- 
+    const handleConsultationClick = () => {
+        props.showAlert("COMING SOON!");
+    };
 
     return (
         <div className='main'>
@@ -24,19 +33,18 @@ function Main() {
                 <h3 className='text-center main-top-2'>with NUTRIHEALTH</h3> */}
             </div>
             <div className="row py-0 m-0 p-0">
-                <div className="col-md-6 col-sm-12 px-5 main-left">
-                    <div className='text-center py-4 px-1 '>
+                <div className="col-md-6 col-sm-12 px-5 main-left ">
+                    {/* <div className='text-center py-4 px-1 '>
                         <button className='btnMain' onClick={handleClickOpen} >Free Ebook</button>
+                    </div> */}
+                    <div className='text-center py-4 px-1 '>
+                        <button className='btnMain' onClick={handleEbookClick} >Free Ebook</button>
                     </div>
                     <div className='text-center pt-3 pb-3 px-1 '>
-                        <a href="/" target='blank'>
-                            <button className='btnMain'>Consultation 1:1</button>
-                        </a>
+                            <button className='btnMain' onClick={handleConsultationClick}>Consultation 1:1</button>
                     </div>
                     <div className='text-center pt-4 px-1 '>
-                        <a href="https://www.youtube.com" target='blank'>
-                            <button className='btnMain'>Healthy Products</button>
-                        </a>
+                        <button className='btnMain' onClick={handleHealthyProductsClick}>Healthy Products</button>
                     </div>
                 </div>
 
@@ -54,7 +62,7 @@ function Main() {
                 </button> */}
             </div>
             {/* {eBook && <Redirect handleRedirectOpen={handleRedirectOpen} handleRedirectClose={handleRedirectClose}/>} */}
-            {popup && <Form handleClose={handleClose} handleClickOpen={handleClickOpen} />}
+            {/* {popup && <Form handleClose={handleClose} handleClickOpen={handleClickOpen} />} */}
         </div>
     )
 }

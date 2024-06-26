@@ -21,14 +21,14 @@ function Navbar() {
                         <div className="offcanvas-body navbarText">
                             <ul className="navbar-nav justify-content-center flex-grow-1  ">
                                 <li className="nav-item mx-3">
-                                    <a className="nav-link " href="/" target='blank'>ABOUT US</a>
+                                    <a className="nav-link " href="https://www.gymo.co.in/" target='blank'>ABOUT US</a>
                                 </li>
                                 <li className="nav-item mx-3 ">
                                     <a className="nav-link " href="/" target='blank'>CONTACT US</a>
                                 </li>
-                                <li className="nav-item mx-3">
-                                    <a className="nav-link " href="/" target='blank'>PRODUCTS </a>
-                                </li>
+                                {/* <li className="nav-item mx-3">
+                                    <a className="nav-link " href="/" target='blank'>PRODUCTS</a>
+                                </li> */}
 
                             </ul>
                         </div>
